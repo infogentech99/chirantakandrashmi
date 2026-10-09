@@ -43,15 +43,15 @@ export default function HeroSection() {
             className="w-[180px] sm:w-[220px] md:w-[280px]"
           />
 
-          <p className="mt-3 text-[15px] tracking-[0.15em] text-[#BC610A] sm:text-xs md:mt-5 md:text-2xl font-cormorant-garamond">
+          {/* <p className="mt-3 text-[15px] tracking-[0.15em] text-[#BC610A] sm:text-xs md:mt-5 md:text-2xl font-cormorant-garamond">
             #ChirantakGotHisRashmiGarg
-          </p>
+          </p> */}
         </div>
 
         {/* ================= CHOOSE TEXT ================= */}
         <div className="mt-14 text-center sm:mt-16 md:mt-20">
           <p className="text-[18px] text-[#BC610A] md:text-xl font-cormorant-garamond">
-            PLEASE CHOOSE ONE TO CONTINUE
+           CHOOSE THE SIDE YOU BELONG TO
           </p>
         </div>
 
