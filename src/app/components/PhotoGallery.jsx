@@ -5,7 +5,7 @@ import { useState } from "react";
 const images = [
   "/assets/book_image.webp",
   "/assets/1n.jpg",
-  "/assets/1n1.jpg",
+  "/assets/1n8.jpg",
   "/assets/1n2.jpg",
   "/assets/1n3.jpg",
   "/assets/1n4.jpg",
@@ -79,12 +79,12 @@ export default function PhotoGallery() {
                   draggable={false}
                   className="w-full h-full rounded-r-2xl rounded-l-sm"
                   style={{
-  objectFit: "cover",
-  objectPosition: "center",
-  filter: "none",
-  backfaceVisibility: "hidden",
-  imageRendering: "auto",
-}}
+                    objectFit: "cover",
+                    objectPosition: "center",
+                    filter: "none",
+                    backfaceVisibility: "hidden",
+                    imageRendering: "auto",
+                  }}
                 />
 
                 {/* Spine shadow */}
