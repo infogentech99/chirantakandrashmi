@@ -128,7 +128,7 @@ export default function LadkiEvents() {
   </div>
 
   {/* Content */}
-  <div className="relative z-10 flex flex-col md:mt-15 mt-10 ml-5">
+  <div className="relative z-10 flex flex-col md:mt-15 mt-10">
           <h2 className="text-[#702B36] font-cormorant-garamond text-[28px] md:text-2xl lg:text-[50px]">
             Sangeet
           </h2>
@@ -219,7 +219,7 @@ export default function LadkiEvents() {
   </div>
 
   {/* Content */}
-  <div className="relative z-10 flex flex-col md:mt-15 mt-15 ml-5">
+  <div className="relative z-10 flex flex-col md:mt-15 mt-15">
         <h2 className="text-[#702B36] font-cormorant-garamond text-[28px] md:text-2xl lg:text-[50px]">
           Wedding
         </h2>
