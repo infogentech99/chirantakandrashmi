@@ -1,18 +1,16 @@
 "use client";
 
 const days = [
-  { date: "4 Dec", icon: "☀️", high: 31, low: 15, note: "Sunny & pleasant" },
-  { date: "5 Dec", icon: "🌤️", high: 30, low: 14, note: "Clear skies" },
+  { date: "1 Dec", icon: "☀️", high: 31, low: 15, note: "Sunny & pleasant" },
+  { date: "2 Dec", icon: "🌤️", high: 30, low: 14, note: "Clear skies" },
 ];
 
 const requestNames = [
-  "Mona - Raj Kumar Tawri",
-  "Rashmi - Shiv Kumar Tawri",
-  "Neha - Rohan",
-  "and Tawri Family",
+  "Mahesh Agarwal - 9434083520",
+  "Shaurya Agarwal - 9339564372",
 ];
 
-const regardsNames = ["Palak - Ankit ji", "Priya - Rakshit ji"];
+
 
 export default function Weather() {
   return (
@@ -26,14 +24,14 @@ export default function Weather() {
      md:px-8 py-8"
       >
         <h2
-          className="text-[#B35800] font-cormorant-garamond text-center
+          className="text-[#BC610A] font-cormorant-garamond text-center
             md:text-5xl text-[30px] lg:text-[80px] leading-tight mt-2 font-semibold"
         >
-          Bikaner Weather
+          Rajasthan Weather
         </h2>
 
         <p className="text-center italic text-[#a0575a] font-cormorant-garamond text-base md:text-lg mt-2">
-          December brings sunny days, pleasant afternoons and cool desert
+          November and December brings sunny days, pleasant afternoons and cool desert
           evenings.
         </p>
 
@@ -50,7 +48,7 @@ export default function Weather() {
                 {d.date}
               </span>
 
-              <span className="mt-2 text-3xl text-[#B35800] font-cormorant-garamond">
+              <span className="mt-2 text-3xl text-[#BC610A] font-cormorant-garamond">
                 {d.high}°
               </span>
 
@@ -71,8 +69,8 @@ export default function Weather() {
         className="w-full max-w-xl rounded-3xl bg-gradient-to-br from-[#8c1212] to-[#5c0505]
         border border-[#a8641a]/60 px-6 py-10 text-center shadow-[0_20px_50px_rgba(0,0,0,0.25)]"
       >
-        <p className="text-[11px] tracking-[0.3em] uppercase text-[#d4a63c]">
-          WELCOME BY
+        <p className="text-[18px] tracking-[0.3em] font-bold uppercase text-[#d4a63c]">
+          RSVP
         </p>
 
         <div className="mt-4 space-y-2">
@@ -86,32 +84,7 @@ export default function Weather() {
           ))}
         </div>
 
-        <div className="mx-auto my-6 h-px w-24 bg-[#d4a63c]/50" />
-
-        <p className="text-[11px] tracking-[0.3em] uppercase text-[#d4a63c]">
-          Special Request
-        </p>
-
-        <div className="mt-4 space-y-3">
-          {regardsNames.map((name) => (
-            <p
-              key={name}
-              className="text-xl md:text-2xl text-[#f6e6dc] font-serif"
-            >
-              {name}
-            </p>
-          ))}
-        </div>
-        <div className="mx-auto my-6 h-px w-24 bg-[#d4a63c]/50" />
-        <p className="text-[11px] tracking-[0.3em] uppercase text-[#d4a63c]">
-          MATERNAL SIDE
-        </p>
-        <p className="text-xl md:text-2xl text-[#f6e6dc] font-serif mt-3">
-          Shri Narendra Kumar & Shri Pawan Kumar Jhawar
-        </p>
-        <p className="text-xl md:text-2xl text-[#f6e6dc] font-serif mt-3">
-          Vaani tawri-mere chachu ke shadi mae jrur jrur aana….
-        </p>
+       
       </div>
     </section>
   );

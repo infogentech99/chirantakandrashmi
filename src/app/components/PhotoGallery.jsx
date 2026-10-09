@@ -4,11 +4,16 @@ import { useState } from "react";
 
 const images = [
   "/assets/book_image.webp",
-  "/assets/couple1.jpg",
-  "/assets/couple2.jpg",
-  "/assets/couple3.jpg",
-  "/assets/couple4.jpg",
-  "/assets/couple5.jpg",
+ "/assets/couple8.JPG",
+  "/assets/couple1.JPG",
+  "/assets/couple2.JPG",
+  "/assets/couple3.JPG",
+  "/assets/couple4.JPG",
+  "/assets/couple5.JPG",
+  "/assets/couple6.JPG",
+  "/assets/couple7.JPG",
+ 
+  "/assets/couple10.JPG",
 ];
 
 const N = images.length;
@@ -32,11 +37,11 @@ export default function PhotoGallery() {
     <section id="photos" className="w-full scroll-mt-6 overflow-x-clip">
       {/* Heading */}
       <div className="flex flex-col justify-center mt-0 lg:mt-20 items-center">
-        <p className="md:text-2xl text-[16px] text-[#B35800] font-cormorant-garamond">
+        <p className="md:text-2xl text-[16px] text-[#BC610A] font-cormorant-garamond">
           Our little album
         </p>
         <h2
-          className="text-[#B35800] font-cormorant-garamond text-center
+          className="text-[#BC610A] font-cormorant-garamond text-center
             md:text-5xl text-[30px] lg:text-[80px] leading-tight mt-2 font-semibold"
         >
           Photo Gallery
@@ -69,12 +74,16 @@ export default function PhotoGallery() {
                 }}
               >
                 <img
-                  src={src}
-                  alt={`Gallery ${index + 1}`}
-                  draggable={false}
-                  className="w-full h-full object-contain rounded-r-2xl rounded-l-sm"
-                  style={{ backfaceVisibility: "hidden" }}
-                />
+  src={src}
+  alt={`Gallery ${index + 1}`}
+  draggable={false}
+  className="w-full h-full rounded-r-2xl rounded-l-sm"
+  style={{
+    objectFit: "cover",
+    objectPosition: src.includes("couple") ? "center 65%" : "center",
+    backfaceVisibility: "hidden",
+  }}
+/>
 
                 {/* Spine shadow */}
                 <div className="absolute inset-y-0 left-0 w-4 bg-gradient-to-r from-black/30 to-transparent rounded-l-sm pointer-events-none" />
@@ -85,7 +94,7 @@ export default function PhotoGallery() {
           {/* Cover hint */}
           {flipped === 0 && (
             <div className="absolute inset-0 z-[100] flex items-center justify-center rounded-2xl bg-black/10 opacity-0 hover:opacity-100 transition-opacity">
-              <span className="bg-white/90 px-5 py-2 rounded-full text-[#B35800] font-cormorant-garamond text-xl">
+              <span className="bg-white/90 px-5 py-2 rounded-full text-[#BC610A] font-cormorant-garamond text-xl">
                 Click to open
               </span>
             </div>

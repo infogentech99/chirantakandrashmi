@@ -16,20 +16,18 @@ export default function ScratchText({ onReveal }) {
     if (!canvas) return;
 
     const ctx = canvas.getContext("2d");
+    if (!ctx) return;
 
     const width = 320;
-    const height = 70; // container height se match
+    const height = 280;
 
     canvas.width = width;
     canvas.height = height;
 
-    // ==========================
-    // GOLD FOIL BACKGROUND
-    // ==========================
-
     const drawLayer = () => {
       ctx.globalCompositeOperation = "source-over";
 
+      // Gold foil background
       const gradient = ctx.createLinearGradient(0, 0, width, height);
 
       gradient.addColorStop(0, "#FFF6BF");
@@ -47,13 +45,21 @@ export default function ScratchText({ onReveal }) {
 
       for (let i = 0; i < 5000; i++) {
         ctx.fillStyle =
-          Math.random() > 0.5 ? "rgba(255,255,255,.9)" : "rgba(120,80,0,.8)";
-        ctx.fillRect(Math.random() * width, Math.random() * height, 1, 1);
+          Math.random() > 0.5
+            ? "rgba(255,255,255,.9)"
+            : "rgba(120,80,0,.8)";
+
+        ctx.fillRect(
+          Math.random() * width,
+          Math.random() * height,
+          1,
+          1
+        );
       }
 
       ctx.globalAlpha = 1;
 
-      // Shine
+      // Shine effect
       const shine = ctx.createLinearGradient(0, 0, width, 0);
 
       shine.addColorStop(0, "transparent");
@@ -66,13 +72,13 @@ export default function ScratchText({ onReveal }) {
       ctx.fillRect(0, 0, width, height);
 
       // Border
-      ctx.strokeStyle = "rgba(255,255,255,.25)";
-      ctx.lineWidth = 1;
-      ctx.strokeRect(0.5, 0.5, width - 1, height - 1);
+      ctx.strokeStyle = "rgba(255,255,255,.35)";
+      ctx.lineWidth = 2;
+      ctx.strokeRect(1, 1, width - 2, height - 2);
 
-      // Text
+      // Scratch instruction
       ctx.fillStyle = "#ffffff";
-      ctx.font = "bold 20px Georgia";
+      ctx.font = "bold 22px Georgia";
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
       ctx.fillText("✨ Scratch to Reveal ✨", width / 2, height / 2);
@@ -88,39 +94,36 @@ export default function ScratchText({ onReveal }) {
     let lastX = 0;
     let lastY = 0;
 
-    // ==========================
-    // REALISTIC SCRATCH BRUSH
-    // ==========================
-
+    // Scratch brush
     const scratch = (x, y) => {
       ctx.save();
 
       ctx.globalCompositeOperation = "destination-out";
-
       ctx.lineCap = "round";
       ctx.lineJoin = "round";
       ctx.lineWidth = 32;
 
-      // Main scratch stroke
       ctx.beginPath();
       ctx.moveTo(lastX, lastY);
       ctx.lineTo(x, y);
       ctx.stroke();
 
       // Soft erase
-      const gradient = ctx.createRadialGradient(x, y, 0, x, y, 22);
+      const gradient = ctx.createRadialGradient(
+        x, y, 0,
+        x, y, 22
+      );
 
       gradient.addColorStop(0, "rgba(0,0,0,1)");
       gradient.addColorStop(0.7, "rgba(0,0,0,.8)");
       gradient.addColorStop(1, "rgba(0,0,0,0)");
 
       ctx.fillStyle = gradient;
-
       ctx.beginPath();
       ctx.arc(x, y, 22, 0, Math.PI * 2);
       ctx.fill();
 
-      // Random realistic chips
+      // Scratch chips
       for (let i = 0; i < 10; i++) {
         const rx = x + (Math.random() - 0.5) * 28;
         const ry = y + (Math.random() - 0.5) * 28;
@@ -130,19 +133,21 @@ export default function ScratchText({ onReveal }) {
         ctx.fill();
       }
 
-      // Tiny scratch lines
+      // Fine scratch lines
       for (let i = 0; i < 5; i++) {
         ctx.lineWidth = Math.random() * 2 + 1;
 
         ctx.beginPath();
         ctx.moveTo(
           x + (Math.random() - 0.5) * 20,
-          y + (Math.random() - 0.5) * 20,
+          y + (Math.random() - 0.5) * 20
         );
+
         ctx.lineTo(
           x + (Math.random() - 0.5) * 35,
-          y + (Math.random() - 0.5) * 35,
+          y + (Math.random() - 0.5) * 35
         );
+
         ctx.stroke();
       }
 
@@ -152,17 +157,13 @@ export default function ScratchText({ onReveal }) {
       ctx.restore();
     };
 
-    // ==========================
-    // AUTO REVEAL
-    // ==========================
-
+    // Reveal animation
     const reveal = () => {
       if (completed) return;
 
       completed = true;
 
-      console.log("REVEALED");
-      onRevealRef.current?.(); // countdown show trigger
+      onRevealRef.current?.();
 
       confetti({
         particleCount: 300,
@@ -207,6 +208,7 @@ export default function ScratchText({ onReveal }) {
       }, 500);
     };
 
+    // Check scratched percentage
     const checkScratch = () => {
       if (completed) return;
 
@@ -221,17 +223,22 @@ export default function ScratchText({ onReveal }) {
 
       const scratched = transparent / (width * height);
 
-      // Reveal after 40%
-      if (scratched > 0.4) {
+      if (scratched > 0.12) {
         reveal();
       }
     };
 
+    // Mouse and touch coordinates
     const getPos = (e) => {
       const rect = canvas.getBoundingClientRect();
+
       const scaleX = width / rect.width;
       const scaleY = height / rect.height;
-      const point = e.touches && e.touches.length ? e.touches[0] : e;
+
+      const point =
+        e.touches && e.touches.length
+          ? e.touches[0]
+          : e;
 
       return {
         x: (point.clientX - rect.left) * scaleX,
@@ -268,14 +275,18 @@ export default function ScratchText({ onReveal }) {
       drawing = false;
     };
 
-    // Mouse
     canvas.addEventListener("mousedown", start);
     canvas.addEventListener("mousemove", move);
     window.addEventListener("mouseup", end);
 
-    // Touch
-    canvas.addEventListener("touchstart", start, { passive: false });
-    canvas.addEventListener("touchmove", move, { passive: false });
+    canvas.addEventListener("touchstart", start, {
+      passive: false,
+    });
+
+    canvas.addEventListener("touchmove", move, {
+      passive: false,
+    });
+
     window.addEventListener("touchend", end);
 
     return () => {
@@ -291,34 +302,45 @@ export default function ScratchText({ onReveal }) {
 
   return (
     <div
-      className="relative inline-block overflow-hidden rounded-md select-none mt-12"
+    className="relative inline-block select-none mt-12"
+    style={{
+      width: "240px",
+      height: "210px",
+      clipPath:
+        "path('M 120 199 C 105 184 11 124 11 68 C 11 15 75 4 120 49 C 165 4 229 15 229 68 C 229 124 135 184 120 199 Z')",
+      WebkitClipPath:
+        "path('M 120 199 C 105 184 11 124 11 68 C 11 15 75 4 120 49 C 165 4 229 15 229 68 C 229 124 135 184 120 199 Z')",
+    }}
+  >
+    {/* Hidden Date */}
+    <div
+      className="absolute inset-0 flex items-center justify-center text-center bg-white"
       style={{
-        width: "320px",
-        height: "70px",
+        color: "#BC610A",
+        fontFamily: "EB Garamond, serif",
+        fontWeight: 600,
+        fontSize: "25px",
+        letterSpacing: ".5px",
+        textShadow: "0 1px 6px rgba(255,215,0,.35)",
+        padding: "0 25px",
       }}
     >
-      {/* Hidden Text */}
-      <div
-        className="absolute inset-0 flex items-center justify-center border bg-white rounded-[12px]"
-        style={{
-          color: "#B35800",
-          fontFamily: "EB Garamond, serif",
-          fontWeight: 600,
-          fontSize: "30px",
-          letterSpacing: ".5px",
-          textShadow: "0 1px 6px rgba(255,215,0,.35)",
-        }}
-      >
-        4<sup className="text-[16px]">th</sup>&5<sup className="text-[16px]">th</sup> December
+      <div>
+        <div>
+          2<sup className="text-[15px]">nd </sup>
+        December</div>
+        <div>2026</div>
       </div>
-
-      <canvas
-        ref={canvasRef}
-        className="absolute inset-0 w-full h-full touch-none cursor-pointer"
-      />
-
-      {/* Shine Animation */}
-      <div className="absolute inset-0 pointer-events-none scratch-shine" />
     </div>
+
+    {/* Scratchable Gold Heart */}
+    <canvas
+      ref={canvasRef}
+      className="absolute inset-0 w-full h-full touch-none cursor-pointer"
+    />
+
+    {/* Shine Animation */}
+    <div className="absolute inset-0 pointer-events-none scratch-shine" />
+  </div>
   );
 }

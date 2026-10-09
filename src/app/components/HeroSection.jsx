@@ -38,19 +38,19 @@ export default function HeroSection() {
         {/* ================= WEDDING LOGO ================= */}
         <div className="mt-8 flex flex-col items-center text-center md:mt-10">
           <img
-            src="/assets/wedding-logo.png"
+            src="/assets/wedding-logo.webp"
             alt="Wedding Logo"
             className="w-[180px] sm:w-[220px] md:w-[280px]"
           />
 
-          <p className="mt-3 text-[15px] tracking-[0.15em] text-[#B35800] sm:text-xs md:mt-5 md:text-2xl font-cormorant-garamond">
-            #AdityaGotHisPriyanka
+          <p className="mt-3 text-[15px] tracking-[0.15em] text-[#BC610A] sm:text-xs md:mt-5 md:text-2xl font-cormorant-garamond">
+            #ChirantakGotHisRashmiGarg
           </p>
         </div>
 
         {/* ================= CHOOSE TEXT ================= */}
         <div className="mt-14 text-center sm:mt-16 md:mt-20">
-          <p className="text-[18px] text-[#B35800] md:text-xl font-cormorant-garamond">
+          <p className="text-[18px] text-[#BC610A] md:text-xl font-cormorant-garamond">
             PLEASE CHOOSE ONE TO CONTINUE
           </p>
         </div>
@@ -74,8 +74,8 @@ export default function HeroSection() {
               cursor-pointer font-cormorant-garamond
               ${
                 selectedSide === "ladke"
-                  ? "scale-105 bg-[#B35800] shadow-lg"
-                  : "bg-[#B35800] hover:scale-105 hover:bg-[#B35800]"
+                  ? "scale-105 bg-[#BC610A] shadow-lg"
+                  : "bg-[#BC610A] hover:scale-105 hover:bg-[#BC610A]"
               }
             `}
           >
@@ -98,8 +98,8 @@ export default function HeroSection() {
               cursor-pointer font-cormorant-garamond
               ${ 
                 selectedSide === "ladki"
-                  ? "scale-105 bg-[#B35800] shadow-lg"
-                  : "bg-[#B35800] hover:scale-105 hover:bg-[#B35800]"
+                  ? "scale-105 bg-[#BC610A] shadow-lg"
+                  : "bg-[#BC610A] hover:scale-105 hover:bg-[#BC610A]"
               }
             `}
           >

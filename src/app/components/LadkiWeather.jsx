@@ -1,17 +1,16 @@
 "use client";
 
 const days = [
-  { date: "4 Dec", icon: "☀️", high: 31, low: 15, note: "Sunny & pleasant" },
-  { date: "5 Dec", icon: "🌤️", high: 30, low: 14, note: "Clear skies" },
+  { date: "1 Dec", icon: "☀️", high: 31, low: 15, note: "Sunny & pleasant" },
+  { date: "2 Dec", icon: "🌤️", high: 30, low: 14, note: "Clear skies" },
 ];
 
 const requestNames = [
-  "Dev dwarkani",
-  "Taruna dwarkani",
+  "Vikash Garg",
+  "Nipun Garg",
   
 ];
 
-const regardsNames = ["Sangeeta- Giriraj Ratan ji Bagree,", "Urvashi- Siddharth ji"];
 
 export default function LadkiWeather() {
   return (
@@ -25,7 +24,7 @@ export default function LadkiWeather() {
      md:px-8 py-8"
       >
         <h2
-          className="text-[#B35800] font-cormorant-garamond text-center
+          className="text-[#BC610A] font-cormorant-garamond text-center
             md:text-5xl text-[30px] lg:text-[80px] leading-tight mt-2 font-semibold"
         >
           Bikaner Weather
@@ -49,7 +48,7 @@ export default function LadkiWeather() {
                 {d.date}
               </span>
 
-              <span className="mt-2 text-3xl text-[#B35800] font-cormorant-garamond">
+              <span className="mt-2 text-3xl text-[#BC610A] font-cormorant-garamond">
                 {d.high}°
               </span>
 
@@ -70,8 +69,8 @@ export default function LadkiWeather() {
         className="w-full max-w-xl rounded-3xl bg-gradient-to-br from-[#8c1212] to-[#5c0505]
         border border-[#a8641a]/60 px-6 py-10 text-center shadow-[0_20px_50px_rgba(0,0,0,0.25)]"
       >
-        <p className="text-[11px] tracking-[0.3em] uppercase text-[#d4a63c]">
-          WELCOME BY
+        <p className="text-[18px] tracking-[0.3em] font-bold uppercase text-[#d4a63c]">
+          RSVP
         </p>
 
         <div className="mt-4 space-y-2">
@@ -85,38 +84,8 @@ export default function LadkiWeather() {
           ))}
         </div>
 
-        <div className="mx-auto my-6 h-px w-24 bg-[#d4a63c]/50" />
-
-        <p className="text-[11px] tracking-[0.3em] uppercase text-[#d4a63c]">
-          Special Request
-        </p>
-
-        <div className="mt-4 space-y-3">
-          {regardsNames.map((name) => (
-            <p
-              key={name}
-              className="text-xl md:text-2xl text-[#f6e6dc] font-serif"
-            >
-              {name}
-            </p>
-          ))}
-        </div>
-        <div className="mx-auto my-6 h-px w-24 bg-[#d4a63c]/50" />
-        <p className="text-[11px] tracking-[0.3em] uppercase text-[#d4a63c]">
-          MATERNAL SIDE
-        </p>
-        <p className="text-xl md:text-2xl text-[#f6e6dc] font-serif mt-3">
-          Madan Gopal ji, Chagan lal ji, Lal Chand ji Daga and Daga family
-        </p>
-
-
-          <div className="mx-auto my-6 h-px w-24 bg-[#d4a63c]/50" />
-        <p className="text-[11px] tracking-[0.3em] uppercase text-[#d4a63c]">
-          Paternal side
-        </p>
-        <p className="text-xl md:text-2xl text-[#f6e6dc] font-serif mt-3">
-          Shankar lal ji, Dau lal ji, Bansi lal ji, Shushil kumar ji, Vimal kumar, Chandan Dwarkani and Dwarkani family
-        </p>
+   
+        
         
       </div>
     </section>

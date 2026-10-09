@@ -5,11 +5,10 @@ import { useEffect, useRef, useState } from "react";
 const cover = "/assets/door.png";
 
 const images = [
+  "/assets/welcome_e.webp",
   "/assets/haldi.webp",
-  "/assets/phool.webp",
-  "/assets/bhaat.webp",
   "/assets/sangeet.webp",
-    "/assets/carnival.webp",
+  "/assets/mayra_e.webp",
       "/assets/shubh.webp",
 ];
 
@@ -58,12 +57,12 @@ export default function Wardrobe() {
       {/* Heading */}
       <div className="flex flex-col justify-center mt-20 lg:mt-40 items-center">
         <h2
-          className="text-[#B35800] font-cormorant-garamond text-center
+          className="text-[#BC610A] font-cormorant-garamond text-center
             md:text-5xl text-[30px] lg:text-[80px] leading-tight mt-2 font-semibold"
         >
           Wardrobe Guide
         </h2>
-        <p className="md:text-2xl text-[16px] text-[#B35800] font-cormorant-garamond">
+        <p className="md:text-2xl text-[16px] text-[#BC610A] font-cormorant-garamond">
           Let’s help you pack for the wedding
         </p>
       </div>
@@ -130,7 +129,7 @@ export default function Wardrobe() {
                 onPointerDown={(event) => event.stopPropagation()}
                 onClick={() => setActive((current) => Math.max(0, current - 1))}
                 disabled={active === 0}
-                className="absolute left-2 top-1/2 z-50 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-[#B35800] shadow-md transition-opacity disabled:opacity-40"
+                className="absolute left-2 top-1/2 z-50 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-[#BC610A] shadow-md transition-opacity disabled:opacity-40"
               >
                 <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                   <path d="m15 18-6-6 6-6" />
@@ -142,7 +141,7 @@ export default function Wardrobe() {
                 onPointerDown={(event) => event.stopPropagation()}
                 onClick={() => setActive((current) => Math.min(getMaxActive(isDesktop), current + 1))}
                 disabled={active >= getMaxActive(isDesktop)}
-                className="absolute right-2 top-1/2 z-50 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-[#B35800] shadow-md transition-opacity disabled:opacity-40"
+                className="absolute right-2 top-1/2 z-50 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-[#BC610A] shadow-md transition-opacity disabled:opacity-40"
               >
                 <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                   <path d="m9 18 6-6-6-6" />

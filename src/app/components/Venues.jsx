@@ -2,10 +2,10 @@
 
 const venues = [
   {
-    title: "Hotel Marudhar Palace",
+    title: "Holymont Resort",
     // place: "Hotel Marudhar Palace",
     image: "/assets/marudhar.webp",
-    link: "https://maps.app.goo.gl/TxqSAhseHFbnyNe99",
+    link: "https://maps.app.goo.gl/xzAuofL2wKb5jVaY6",
   },
 
 
@@ -16,7 +16,7 @@ export default function Venues() {
     <section id="venue" className="w-full scroll-mt-6 px-4 md:px-10 py-20 flex flex-col items-center">
       {/* Heading */}
       <h2
-        className="text-[#B35800] font-cormorant-garamond text-center
+        className="text-[#BC610A] font-cormorant-garamond text-center
             md:text-5xl text-[30px] lg:text-[80px] leading-tight mt-2 font-semibold"
       >
         The Venue
@@ -43,7 +43,7 @@ export default function Venues() {
               />
             </div>
 
-            <h3 className="mt-8 text-xl text-[#B35800] font-serif">
+            <h3 className="mt-8 text-xl text-[#BC610A] font-serif">
               {v.title}
             </h3>
 
@@ -54,8 +54,8 @@ export default function Venues() {
               target="_blank"
               rel="noopener noreferrer"
               className="mt-6 w-full rounded-full border border-[#c9a45c] bg-[#f3e4c8]/70
-              py-3 text-sm text-[#B35800] font-serif
-              hover:bg-[#B35800] hover:text-white transition-colors"
+              py-3 text-sm text-[#BC610A] font-serif
+              hover:bg-[#BC610A] hover:text-white transition-colors"
             >
               Tap for location
             </a>
@@ -71,7 +71,7 @@ export default function Venues() {
           />
         </a>
       </div>
-      <p className="text-xl md:text-xl lg:text-[20px] text-[#B35800] mt-2 md:mt-2 text-center font-cormorant-garamond">
+      <p className="text-xl md:text-xl lg:text-[20px] text-[#BC610A] mt-2 md:mt-2 text-center font-cormorant-garamond">
         ©
         <a href="https://invitearc.com/" target="_blank">
           InviteArc 

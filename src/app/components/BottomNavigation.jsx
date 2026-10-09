@@ -39,7 +39,7 @@ export default function BottomNavigation() {
   return (
     <nav
       aria-label="Page sections"
-      className="fixed inset-x-0 bottom-0 z-60 border-t border-white/20 bg-[#B35800] pb-[env(safe-area-inset-bottom)] text-[#F6EFE2] shadow-[0_-4px_18px_rgba(0,0,0,0.2)] rounded-tl-2xl rounded-tr-2xl"
+      className="fixed inset-x-0 bottom-0 z-60 border-t border-white/20 bg-[#BC610A] pb-[env(safe-area-inset-bottom)] text-[#F6EFE2] shadow-[0_-4px_18px_rgba(0,0,0,0.2)] rounded-tl-2xl rounded-tr-2xl"
     >
       <div className="mx-auto grid min-h-16 max-w-3xl grid-cols-6">
         {items.map((item) => (

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 
 export default function MarriageCountdown() {
-    const TARGET_DATE = new Date("2026-12-05").getTime();
+    const TARGET_DATE = new Date("2026-12-02").getTime();
   const [timeLeft, setTimeLeft] = useState({
   days: 14,
   hours: 12,
@@ -60,23 +60,23 @@ useEffect(() => {
         <>
             <div className="bg-[url('/assets/bg_four.webp')] bg-cover bg-no-repeat">
                
-                    <h2 className="text-[20px] md:text-xl lg:text-[16px] text-center text-[#B35800] pt-18 md:pt-11 lg:pt-10 3xl:pt-25 font-cormorant-garamond uppercase font-bold">Counting down to the celebration</h2> 
+                    <h2 className="text-[20px] md:text-xl lg:text-[16px] text-center text-[#BC610A] pt-18 md:pt-11 lg:pt-10 3xl:pt-25 font-cormorant-garamond uppercase font-bold">Counting down to the celebration</h2> 
                      
                     <div className="flex md:gap-12 gap-2 justify-center items-center mt-6">
-                       <div className="border px-6 py-2 bg-[#F8F4EA] border-[#B35800] rounded-md">
-                         <h2 className="text-[30px] md:text-4xl lg:text-[52px] text-center text-[#B35800] font-cormorant-garamond"> {timeLeft.days}</h2>
+                       <div className="border px-5 py-2 bg-[#F8F4EA] border-[#BC610A] rounded-md">
+                         <h2 className="text-[30px] md:text-4xl lg:text-[52px] text-center text-[#BC610A] font-cormorant-garamond"> {timeLeft.days}</h2>
                           <h2 className="text-[10px] md:text-2xl lg:text-[15px] text-center text-black font-cormorant-garamond uppercase">Days </h2>
                        </div>
-                        <div className="border px-6 py-2 bg-[#F8F4EA] border-[#B35800] rounded-md">
-                         <h2 className="text-[30px] md:text-4xl lg:text-[52px] text-center text-[#B35800] font-cormorant-garamond"> {timeLeft.hours}</h2>
+                        <div className="border px-5 py-2 bg-[#F8F4EA] border-[#BC610A] rounded-md">
+                         <h2 className="text-[30px] md:text-4xl lg:text-[52px] text-center text-[#BC610A] font-cormorant-garamond"> {timeLeft.hours}</h2>
                           <h2 className="text-[10px] md:text-2xl lg:text-[15px] text-center text-black font-cormorant-garamond uppercase">Hours</h2>
                        </div>
-                       <div className="border px-6 py-2 bg-[#F8F4EA] border-[#B35800] rounded-md">
-                         <h2 className="text-[30px] md:text-4xl lg:text-[52px] text-center text-[#B35800] font-cormorant-garamond"> {timeLeft.minutes}</h2>
+                       <div className="border px-5 py-2 bg-[#F8F4EA] border-[#BC610A] rounded-md">
+                         <h2 className="text-[30px] md:text-4xl lg:text-[52px] text-center text-[#BC610A] font-cormorant-garamond"> {timeLeft.minutes}</h2>
                           <h2 className="text-[10px] md:text-2xl lg:text-[15px] text-center text-black font-cormorant-garamond uppercase">Minutes</h2>
                        </div>
-                       <div className="border px-6 py-2 bg-[#F8F4EA] border-[#B35800] rounded-md">
-                         <h2 className="text-[30px] md:text-4xl lg:text-[52px] text-center text-[#B35800] font-cormorant-garamond">{timeLeft.seconds}</h2>
+                       <div className="border px-5 py-2 bg-[#F8F4EA] border-[#BC610A] rounded-md">
+                         <h2 className="text-[30px] md:text-4xl lg:text-[52px] text-center text-[#BC610A] font-cormorant-garamond">{timeLeft.seconds}</h2>
                           <h2 className="text-[10px] md:text-2xl lg:text-[15px] text-center text-black font-cormorant-garamond uppercase">Seconds</h2>
                        </div>
                     </div>
