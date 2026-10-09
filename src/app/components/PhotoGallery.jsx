@@ -4,16 +4,15 @@ import { useState } from "react";
 
 const images = [
   "/assets/book_image.webp",
- "/assets/couple8.JPG",
-  "/assets/couple1.JPG",
-  "/assets/couple2.JPG",
-  "/assets/couple3.JPG",
-  "/assets/couple4.JPG",
-  "/assets/couple5.JPG",
-  "/assets/couple6.JPG",
-  "/assets/couple7.JPG",
- 
-  "/assets/couple10.JPG",
+ "/assets/couple8.jpg",
+  "/assets/couple1.jpg",
+  "/assets/couple2.jpg",
+  "/assets/couple3.jpg",
+  "/assets/couple4.jpg",
+  "/assets/couple5.jpg",
+  "/assets/couple6.jpg",
+  "/assets/couple7.jpg",
+  "/assets/couple10.jpg",
 ];
 
 const N = images.length;
