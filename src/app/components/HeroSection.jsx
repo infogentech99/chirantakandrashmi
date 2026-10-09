@@ -50,7 +50,7 @@ export default function HeroSection() {
 
         {/* ================= CHOOSE TEXT ================= */}
         <div className="mt-14 text-center sm:mt-16 md:mt-20">
-          <p className="text-[18px] text-[#BC610A] md:text-xl font-cormorant-garamond">
+          <p className="text-[16px] text-[#BC610A] md:text-xl font-cormorant-garamond">
            CHOOSE THE SIDE YOU BELONG TO
           </p>
         </div>
