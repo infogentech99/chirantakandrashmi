@@ -27,12 +27,11 @@ export default function LadkiWeather() {
           className="text-[#BC610A] font-cormorant-garamond text-center
             md:text-5xl text-[30px] lg:text-[80px] leading-tight mt-2 font-semibold"
         >
-          Bikaner Weather
+          Rajasthan Weather
         </h2>
 
         <p className="text-center italic text-[#a0575a] font-cormorant-garamond text-base md:text-lg mt-2">
-          December brings sunny days, pleasant afternoons and cool desert
-          evenings.
+          November and December brings sunny days, pleasant afternoons and cool desert evenings.
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-2 gap-4 mt-8">

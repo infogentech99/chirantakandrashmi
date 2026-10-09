@@ -34,7 +34,7 @@ export default function LadkiDetails() {
             With
           </span>
           <br />
-          Chirantak Tawri
+          Chirantak Agarwal
         </h2>
 
         <p className="text-[#BC610A] font-cormorant-garamond lg:text-[30px] md:text-2xl mt-2 text-[16px]">
