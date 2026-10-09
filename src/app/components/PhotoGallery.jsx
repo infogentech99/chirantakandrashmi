@@ -4,15 +4,16 @@ import { useState } from "react";
 
 const images = [
   "/assets/book_image.webp",
- "/assets/couple8.jpg",
-  "/assets/couple1.jpg",
-  "/assets/couple2.jpg",
-  "/assets/couple3.jpg",
-  "/assets/couple4.jpg",
-  "/assets/couple5.jpg",
-  "/assets/couple6.jpg",
-  "/assets/couple7.jpg",
-  "/assets/couple10.jpg",
+  "/assets/1n.jpg",
+  "/assets/1n1.jpg",
+  "/assets/1n2.jpg",
+  "/assets/1n3.jpg",
+  "/assets/1n4.jpg",
+  "/assets/1n5.jpg",
+  "/assets/1n6.jpg",
+  "/assets/1n7.jpg",
+  "/assets/1n10.jpg",
+  "/assets/1n9.jpg",
 ];
 
 const N = images.length;
@@ -73,16 +74,18 @@ export default function PhotoGallery() {
                 }}
               >
                 <img
-  src={src}
-  alt={`Gallery ${index + 1}`}
-  draggable={false}
-  className="w-full h-full rounded-r-2xl rounded-l-sm"
-  style={{
-    objectFit: "cover",
-    objectPosition: src.includes("couple") ? "center 65%" : "center",
-    backfaceVisibility: "hidden",
-  }}
-/>
+                  src={src}
+                  alt={`Gallery ${index + 1}`}
+                  draggable={false}
+                  className="w-full h-full rounded-r-2xl rounded-l-sm"
+                  style={{
+  objectFit: "cover",
+  objectPosition: "center",
+  filter: "none",
+  backfaceVisibility: "hidden",
+  imageRendering: "auto",
+}}
+                />
 
                 {/* Spine shadow */}
                 <div className="absolute inset-y-0 left-0 w-4 bg-gradient-to-r from-black/30 to-transparent rounded-l-sm pointer-events-none" />
@@ -99,8 +102,6 @@ export default function PhotoGallery() {
             </div>
           )}
         </div>
-
-       
       </div>
     </section>
   );
