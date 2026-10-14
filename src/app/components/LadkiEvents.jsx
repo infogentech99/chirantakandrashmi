@@ -2,7 +2,7 @@
 
 export default function LadkiEvents() {
   return (
-      <div
+<div
       id="itinerary"
       className="flex scroll-mt-6 flex-col justify-center mt-10 lg:mt-40 items-center"
     >
@@ -23,8 +23,8 @@ export default function LadkiEvents() {
         <div className="absolute inset-0 bg-[url('/assets/welcome_event_n.webp')] bg-cover bg-center bg-no-repeat"></div>
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col md:mt-15 mt-16">
-          <h2 className="text-[#BC610A] font-cormorant-garamond text-[28px] md:text-2xl lg:text-[50px] font-semibold md:px-0 px-6">
+        <div className="relative z-10 flex flex-col md:mt-30 mt-16">
+          <h2 className="text-[#BC610A] font-cormorant-garamond text-[28px] md:text-3xl lg:text-[46px] font-semibold md:px-0 px-6">
             Winter
             Ball
           </h2>
@@ -70,12 +70,12 @@ export default function LadkiEvents() {
         Tuesday, 1st December 2026
       </h2>
 
-      <div className="relative flex flex-col text-center overflow-hidden rounded-2xl min-h-[350px] md:min-h-[600px] px-10 md:px-25 py-5 md:mt-20 mt-8">
+      <div className="relative flex flex-col text-center overflow-hidden rounded-2xl min-h-[350px] md:min-h-[600px] px-10 md:px-17 py-5 md:mt-20 mt-8">
         <div className="absolute inset-0 bg-[url('/assets/haldi_event.webp')] bg-cover bg-center bg-no-repeat"></div>
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col md:mt-15 mt-12">
-          <h2 className="text-[#BC610A] font-cormorant-garamond text-[25px] md:text-4xl lg:text-[50px] leading-tight font-semibold" >
+        <div className="relative z-10 flex flex-col md:mt-30 mt-12">
+          <h2 className="text-[#BC610A] font-cormorant-garamond text-[25px] md:text-3xl lg:text-[40px] leading-tight font-semibold" >
             Sunshine & Shor <br/>Carnival
           </h2>
           <p className="text-[#BC610A] font-cormorant-garamond text-[16px] md:text-base">
@@ -102,12 +102,12 @@ export default function LadkiEvents() {
         </div>
       </div>
 
-      <div className="relative flex flex-col text-center overflow-hidden rounded-2xl min-h-[400px] md:min-h-[600px] px-7 md:px-25 py-3 md:mt-20 mt-8">
+      <div className="relative flex flex-col text-center overflow-hidden rounded-2xl min-h-[400px] md:min-h-[600px] px-7 md:px-13 lg:px-11 py-3 md:mt-20 mt-8">
         <div className="absolute inset-0 bg-[url('/assets/sangeet_event_n.webp')] bg-cover bg-center bg-no-repeat"></div>
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col md:mt-15 mt-25">
-          <h2 className="text-[#fff] font-cormorant-garamond text-[25px] md:text-2xl lg:text-[50px] leading-tight font-semibold">
+        <div className="relative z-10 flex flex-col md:mt-45 lg:mt-35 mt-25">
+          <h2 className="text-[#fff] font-cormorant-garamond text-[25px] md:text-3xl lg:text-[40px] leading-tight font-semibold">
             Moonlight & Music <br/> Sangeet
           </h2>
           {/* <p className="text-[#702B36] font-cormorant-garamond text-[16px] md:text-base">
@@ -151,12 +151,12 @@ export default function LadkiEvents() {
         Wednesday, 2nd December 2026
       </h2>
 
-      <div className="relative flex flex-col text-center overflow-hidden rounded-2xl min-h-[400px] md:min-h-[600px] px-17 py-0 md:px-25 md:mt-20 mt-8">
+      <div className="relative flex flex-col text-center overflow-hidden rounded-2xl min-h-[400px] md:min-h-[600px] px-17 py-0 md:px-26 lg:px-25 md:mt-20 mt-8">
         <div className="absolute inset-0 bg-[url('/assets/mayra_event_n.webp')] bg-cover bg-center bg-no-repeat"></div>
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col md:mt-15 mt-22 ml-5">
-          <h2 className="text-[#702B36] font-cormorant-garamond text-[28px] md:text-2xl lg:text-[50px] font-semibold">
+        <div className="relative z-10 flex flex-col md:mt-35 mt-22 ml-5">
+          <h2 className="text-[#702B36] font-cormorant-garamond text-[28px] md:text-3xl lg:text-[50px] font-semibold">
             Marigold <br/>Mayra
           </h2>
           <p className="text-[#702B36]  font-cormorant-garamond text-[16px] md:text-base mt-2">
@@ -179,12 +179,12 @@ export default function LadkiEvents() {
         </div>
       </div>
 
-      <div className="relative flex flex-col text-center overflow-hidden rounded-2xl min-h-[400px] md:min-h-[600px] px-11 py-0 md:px-25 md:mt-20 mt-8">
+      <div className="relative flex flex-col text-center overflow-hidden rounded-2xl min-h-[400px] md:min-h-[600px] px-11 py-0 md:px-19 lg:px-13 md:mt-20 mt-8">
         <div className="absolute inset-0 bg-[url('/assets/wedding_event_n.webp')] bg-cover bg-center bg-no-repeat"></div>
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col md:mt-15 mt-25">
-          <h2 className="text-[#702B36] font-cormorant-garamond text-[28px] md:text-2xl lg:text-[50px] font-semibold">
+        <div className="relative z-10 flex flex-col md:mt-45 mt-25">
+          <h2 className="text-[#702B36] font-cormorant-garamond text-[28px] md:text-3xl lg:text-[50px] font-semibold">
             Vows in Bloom
           </h2>
           <p className="text-[#702B36]  font-cormorant-garamond text-[16px] md:text-base mt-2">
