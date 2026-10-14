@@ -14,7 +14,7 @@ export default function LadkiDetails() {
   return (
     <div className="mx-auto w-full max-w-4xl text-center md:p-2">
       <p className="text-[17px] md:text-2xl text-[#BC610A] font-cormorant-garamond">
-        With the blessing of Late Shree Bansi Lal Garg & Late Smt. Ramkali Devi
+        With the blessing of Late Bansi Lal Garg & Late Ramkali Devi
       </p> <br />
       <p className="text-[17px] md:text-2xl text-[#BC610A] font-cormorant-garamond">
         We cordially invite you to the wedding ceremony of their Granddaughter
@@ -22,11 +22,11 @@ export default function LadkiDetails() {
 
       <div className="mt-8 text-center">
         <h2 className="text-[#BC610A] font-pinyon-script text-center mt-14 md:text-4xl text-[38px] lg:text-[60px] leading-tight font-bold">
-          Rashmi Garg 
+          Rashmi
         </h2>
 
         <p className="text-[#BC610A] font-cormorant-garamond lg:text-[30px] md:text-2xl mt-2 text-[16px]">
-          (D/o Shree Devender Kumar Garg & Smt. Ritu Garg)
+          (D/o Mr. Devender & Mrs. Ritu Garg)
         </p>
 
         <h2 className="text-[#BC610A] font-pinyon-script text-center text-[38px] sm:text-7xl lg:text-[60px] leading-tight font-bold">
@@ -34,11 +34,11 @@ export default function LadkiDetails() {
             With
           </span>
           <br />
-          Chirantak Agarwal
+          Chirantak
         </h2>
 
         <p className="text-[#BC610A] font-cormorant-garamond lg:text-[30px] md:text-2xl mt-2 text-[16px]">
-          (S/o Shree Mahesh Kumar Agarwal & Smt. Namrata Agarwal)
+          (S/o Mr. Mahesh & Mrs. Namrata Agarwal)
         </p>
 
         <ScratchText onReveal={() => setRevealed(true)} />
