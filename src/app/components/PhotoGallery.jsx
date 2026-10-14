@@ -4,6 +4,8 @@ import { useState } from "react";
 
 const images = [
   "/assets/book_image.webp",
+  "/assets/chir.jpg",
+  "/assets/chir2.jpg",
   "/assets/1n.jpg",
   "/assets/1n8.jpg",
   "/assets/1n2.jpg",
@@ -12,7 +14,6 @@ const images = [
   "/assets/1n5.jpg",
   "/assets/1n6.jpg",
   "/assets/1n7.jpg",
-  "/assets/1n10.jpg",
   "/assets/1n9.jpg",
 ];
 

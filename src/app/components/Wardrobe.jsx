@@ -5,8 +5,7 @@ import { useEffect, useRef, useState } from "react";
 const cover = "/assets/door.png";
 
 const images = [
-  "/assets/chhh.webp",
-  
+    "/assets/chhh.webp",
   "/assets/chh2.webp",
   "/assets/chh3.webp",
   "/assets/chh4.webp",
