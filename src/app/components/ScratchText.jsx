@@ -316,7 +316,7 @@ export default function ScratchText({ onReveal }) {
     <div
       className="absolute inset-0 flex items-center justify-center text-center bg-white"
       style={{
-        color: "#BC610A",
+        color: "#8c1034",
         fontFamily: "EB Garamond, serif",
         fontWeight: 600,
         fontSize: "25px",
@@ -325,7 +325,7 @@ export default function ScratchText({ onReveal }) {
         padding: "0 25px",
       }}
     >
-      <div>
+      <div className="text-[#BC610A]">
         <div>
           2<sup className="text-[15px]">nd </sup>
         December</div>

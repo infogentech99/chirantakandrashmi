@@ -1,8 +1,8 @@
 "use client";
 
 const days = [
-  { date: "1 Dec", icon: "☀️", high: 31, low: 15, note: "Sunny & pleasant" },
-  { date: "2 Dec", icon: "🌤️", high: 30, low: 14, note: "Clear skies" },
+  { date: "Nov", icon: "☀️", high: 31, low: 15, note: "Sunny & pleasant" },
+  { date: "Dec", icon: "🌤️", high: 30, low: 14, note: "Clear skies" },
 ];
 
 const requestNames = [

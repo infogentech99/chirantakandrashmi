@@ -21,7 +21,7 @@ export default function HeroSection() {
       />
 
   <div className="pointer-events-none fixed inset-0 z-20 h-screen w-screen">
-    <RoseHeroTemp />
+    {/* <RoseHeroTemp /> */}
   </div>
       {/* ================= CONTENT ================= */}
       <div className="relative z-10 flex min-h-screen w-full flex-col items-center px-10 py-10 pb-28 sm:px-8 md:px-12 lg:px-16 mt-10">
