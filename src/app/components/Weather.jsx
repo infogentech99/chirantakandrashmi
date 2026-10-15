@@ -27,7 +27,7 @@ export default function Weather() {
           className="text-[#BC610A] font-cormorant-garamond text-center
             md:text-5xl text-[30px] lg:text-[80px] leading-tight mt-2 font-semibold"
         >
-          Rajasthan Weather
+          Udaipur Weather
         </h2>
 
         <p className="text-center italic text-[#a0575a] font-cormorant-garamond text-base md:text-lg mt-2">

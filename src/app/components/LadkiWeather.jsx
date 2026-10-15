@@ -1,8 +1,8 @@
 "use client";
 
 const days = [
-  { date: "1 Dec", icon: "☀️", high: 31, low: 15, note: "Sunny & pleasant" },
-  { date: "2 Dec", icon: "🌤️", high: 30, low: 14, note: "Clear skies" },
+  { date: "Nov", icon: "☀️", high: 31, low: 15, note: "Sunny & pleasant" },
+  { date: "Dec", icon: "🌤️", high: 30, low: 14, note: "Clear skies" },
 ];
 
 const requestNames = [
@@ -27,7 +27,7 @@ export default function LadkiWeather() {
           className="text-[#BC610A] font-cormorant-garamond text-center
             md:text-5xl text-[30px] lg:text-[80px] leading-tight mt-2 font-semibold"
         >
-          Rajasthan Weather
+          Udaipur Weather
         </h2>
 
         <p className="text-center italic text-[#a0575a] font-cormorant-garamond text-base md:text-lg mt-2">

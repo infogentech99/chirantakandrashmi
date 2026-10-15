@@ -2,7 +2,7 @@
 
 const venues = [
   {
-    title: "Holymont Resort",
+    title: "Hotel Holymont Udaipur",
     // place: "Hotel Marudhar Palace",
     image: "/assets/marudhar.webp",
     link: "https://maps.app.goo.gl/xzAuofL2wKb5jVaY6",
