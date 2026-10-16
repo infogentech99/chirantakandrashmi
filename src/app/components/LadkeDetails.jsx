@@ -38,7 +38,7 @@ export default function LadkeDetails() {
         </h2>
 
         <p className="text-[#BC610A] font-cormorant-garamond lg:text-[30px] md:text-2xl mt-2 text-[16px]">
-          (D/o Mr. Devender & Mrs. Ritu Garg)
+          (D/o Mr. Devendra & Mrs. Ritu Garg)
         </p>
 
         <ScratchText onReveal={() => setRevealed(true)} />
